@@ -65,3 +65,16 @@
         type: file
         contentMediaType: "application/json"
         pattern: '^.+\.json$'
+    - description: Folder containing rules
+      type: folder
+      name: "rules"
+      required: false
+      contents:
+      - description: A
+        type: file
+        contentMediaType: "application/json"
+        pattern: '^{PACKAGE_NAME}-.+\.json$'
+      - description: Changelog for all of the rules in the folder
+        type: file
+        contentMediaType: "application/json"
+        pattern: '^CHANGELOG\.json$'
